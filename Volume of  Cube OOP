@@ -1,0 +1,17 @@
+ancho = int(input("proporcione el ancho: "))
+alto = int(input("Proporcione la altura: "))
+profundo = int(input("Proporcione la profundidad: "))
+
+
+class Cubo:
+    def __init__(self, anchura, altura, profundidad):
+        self.anchura = anchura
+        self.altura = altura
+        self.profundidad = profundidad
+
+    def calcular_volumen(self):
+        return self.anchura * self.altura * self.profundidad
+
+
+cubo_1 = Cubo(ancho, alto, profundo)
+print(f"El volumen del cubo es de {cubo_1.calcular_volumen()} unidades cúbicas")
