@@ -1,0 +1,15 @@
+n_1 = int(input("Proporcione la base: "))
+n_2 = int(input("Proporcione la altura: "))
+
+
+class Triangulo:
+    def __init__(self, base, altura):
+        self.base = base
+        self.altura = altura
+
+    def mostrar(self):
+        return (self.base * self.altura) / 2
+
+
+triangulo_1 = Triangulo(n_1, n_2)
+print(f"El area del triangulo es: {triangulo_1.mostrar()}")
